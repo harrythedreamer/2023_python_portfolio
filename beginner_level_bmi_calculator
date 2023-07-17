@@ -34,5 +34,6 @@ else:
     print("invalid input, please try again")
 ------------------------------------------------------------------------
 
+# enter 149.914 for weight and 68.1102 for height
 your bmi is:  22.71816272951196
 Harry, you are normal weight
