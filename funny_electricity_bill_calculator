@@ -8,7 +8,6 @@ In Vietnam, the electricity bill is determined as follows:
 - Next 100 kw: each kw costs 2503 VND
 - From 601th kw: each kw costs 2587 VND
 
-
 -----------------------------------------------------------------------------------------------------------
 # label prices
 lv1 = 1484
