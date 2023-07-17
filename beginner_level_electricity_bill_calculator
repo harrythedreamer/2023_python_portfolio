@@ -1,0 +1,43 @@
+# ELECTRICITY BILL CACULATOR 
+
+In Vietnam, the electricity bill is determined as follows:
+- First 50 kw: each kw costs 1484 VND
+- Next 50 kw: each kw costs 1533 VND
+- Next 100 kw: each kw costs 1786 VND
+- Next 100 kw: each kw costs 2242 VND
+- Next 100 kw: each kw costs 2503 VND
+- From 601th kw: each kw costs 2587 VND
+
+
+-----------------------------------------------------------------------------------------------------------
+# label prices
+lv1 = 1484
+lv2 = 1533
+lv3 = 1786
+lv4 = 2242
+lv5 = 2503
+lv6 = 2587
+
+# request input: the kilowatt quantity consumed
+elec_bill = 0
+kw_comsumed = int(input('Kilowatt quantity comsumed'))
+
+# calculate
+if kw_comsumed <= 50:
+    elec_bill = kw_consumed*lv1 
+elif kw_comsumed <= 100:
+    elec_bill = 50*lv1 + (kw_comsumed-50)*lv2
+elif kw_comsumed <= 200:
+    elec_bill = 50*lv1 + 50*lv2 + (kw_comsumed-50-50)*lv3 
+elif kw_comsumed <= 300:
+    elec_bill = 50*lv1 + 50*lv2 + 100*lv3 + (kw_comsumed-50-50-100)*lv4 
+elif kw_comsumed <= 400:
+    elec_bill = 50* lv1 + 50*lv2 + 100*lv3 +100*lv4 + (kw_comsumed-50-50-100-100)*lv5 
+else:
+    elec_bill = 50*lv1 + 50*lv2 + 100*lv3 + 100*lv4 +100*lv5 + (kw_comsumed-50-50-100-100-100)*lv6
+
+print('electricity bill values: ', elec_bill)
+-----------------------------------------------------------------------------------------------------------
+
+# enter value 420
+electricity bill values:  855690 
