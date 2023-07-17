@@ -11,6 +11,7 @@ BMI categories:
 - Severe obesity:    35 <= BMI < 40
 - Morbid obesity:    40 <= BMI
 
+------------------------------------------------------------------------
 name  = input("What is your name?")
 weight = float(input("Type your weight in pounds"))
 height = float(input("Type your height in inches"))
@@ -31,6 +32,7 @@ if bmi > 0:
         print(name + ", you are morbidly obese")
 else:
     print("invalid input, please try again")
+------------------------------------------------------------------------
 
 your bmi is:  22.71816272951196
 Harry, you are normal weight
